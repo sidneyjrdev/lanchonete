@@ -1,0 +1,612 @@
+/*site*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    list-style-type: none;
+
+    box-sizing: border-box;
+}
+
+body{
+    background: url('../img/fundo.jpg') top center repeat;
+    background-size: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+
+/*modal*/
+
+
+.modal-title{
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/*Cabeçalho*/
+.cabecalho{
+    height: 175px;
+    width: 100%;
+    position: relative;
+    background: #2196F3;
+    padding: 10px;
+    border: 1px solid #212121;
+}
+
+.redes-sociais{
+    float: left;
+    padding: 2px;
+}
+
+.redes-sociais li{
+    display: inline;
+    padding: 2px;
+    text-align: center;
+}
+
+.redes-sociais li a{
+    cursor: pointer;
+    padding: 2px;
+
+}
+
+.redes-sociais li a img{
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+}
+
+.imgLogo{
+    width: 420px;
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -90px;
+    margin-left: -210px;
+
+}
+
+#spEndereco{
+    position: absolute;
+    left: 2%;
+    top: 85%;
+
+    color: #FFFFFF;
+
+}
+
+.btnPainel{
+    position: absolute;
+    left: 75%;
+    top: 5%;
+
+
+}
+
+#spFuncionamento{
+    position: absolute;
+    left: 71%;
+    top: 75%;
+    color: #FFFFFF;
+}
+
+/*Menu*/
+.menu{
+    height: 40px;
+    width: 100%;
+    background-color: #1976D2;
+    border: 1px solid #212121;
+}
+
+.menu-site{
+    float: left;
+    line-height: 35px;
+    margin-left: 8px;
+}
+
+.menu-site li{
+    display: inline;
+    padding: 5px; 
+
+}
+
+.menu-site li a{
+    padding: 5px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 1.1em;
+
+}
+
+.menu-site li a:hover{
+    color: yellow;
+}
+
+/*Menu celular*/
+
+
+.btnMenuCelular{
+    position: absolute;
+    top: 7%;
+    left: 6%;
+}
+
+.menu-celular{
+    display: none; 
+    z-index: 99;
+    height: auto;
+    width: 295px;
+    border: 1px solid #212121;
+    background-color: #1976D2;
+    position: fixed;
+    top: 15%;
+    left: 6%;
+}
+
+.menu-celular li{
+    display: block;
+    padding: 5px; 
+    margin-bottom: 5px;
+    border-bottom: 1px dashed #212121;
+}
+
+.menu-celular li:last-child{
+    border-bottom: none;
+}
+
+.menu-celular li a{
+    margin-bottom: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+
+
+}
+
+.menu-celular li a:active{
+    color: yellow;
+}
+
+/*divInfo*/
+.dvInfo{
+    background-color: #607D8B;
+}
+
+.dvInfo span{ 
+    color: white;
+    padding: 3px;
+
+}
+
+.dvInfo > span{font-size: 0.7em}
+
+
+/*rodapé*/
+.rodape{
+    text-align: center;
+    padding: 5px;
+    height: 80px;
+    width: 100%;
+    background-color: #1976D2;
+    border: 1px solid #212121;
+    margin-top: -15px;
+
+}
+
+#spRodape{
+   line-height: 30px;
+   color: #FFFFFF; 
+}
+
+.redes-sociais-celular{
+    clear: both;
+    text-align: center;
+    margin-top: -4px;
+}
+
+.redes-sociais-celular li{
+    display: inline;
+    padding: 4px;
+    text-align: center;
+}
+
+.redes-sociais-celular li a{
+    cursor: pointer;
+    padding: 4px;
+
+}
+
+.redes-sociais-celular li a img{
+    width: 44px;
+    height: 44px;
+    padding: 4px;
+}
+
+/* home */
+#dvImgFixa{
+    width: 100%;
+    text-align: center;
+}
+
+#imgFixaHome{
+    width: 75%;
+    height: 330px;
+    border: 4px solid #212121;
+
+}
+
+#spHome{
+    display: block;
+    margin: 40px 0 10px 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #757575;
+}
+
+.imgDestHome{
+    height: 300px;
+    width: 100%;
+    border: 4px solid #212121;
+    margin-bottom: 28px;
+}
+
+/*login*/
+.voltarLogin{
+    color: #2196F3;
+    margin-top: 10px;
+}
+
+.voltarLogin:hover{
+    color: #245580;
+    text-decoration: none;
+}
+
+#txtEmailLogin{
+    display: block;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+}
+
+#txtSenhaLogin{
+    display: block;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+}
+
+.btnSubmit{
+    width:120px;
+    height: 35px;
+    display: block;
+    background-color: #4cae4c;
+    color: white;
+    padding: 6px;
+    margin-bottom: 30px;
+}
+
+.btnSubmit:hover{
+    width:120px;
+    height: 35px;
+    background-color: #3c763d;
+    color: white;
+    padding: 6px;
+}
+
+
+/* contato */
+.spGrande{
+    font-size: 1.5em; 
+    font-weight: bold;
+    letter-spacing: 0.09em;
+}
+
+.spSub{
+    font-size: 1.3em; 
+
+}
+
+.frmContato input:not(.btnContato), #txtArea{ /*ver so com btn*/
+    padding: 8px;
+}
+
+form[name='frmContato']{
+    width: 750px;
+    padding: 5px 8px 5px 8px;
+    border: 1px solid #212121;
+    margin-top: 50px;
+}
+
+#tituloForm{
+    font-weight: bold;
+    font-size: 2.3em;
+
+}
+
+.dvTel{
+    margin-bottom: 58px;
+    padding: 6px;
+}
+
+.dvEmail{
+    padding: 6px;
+}
+
+/* sobre nós */
+#spSobreNos{
+    font-size: 1.2em;
+}
+
+.txtSobreNos{
+    font-size: 1.3em;
+    
+}
+
+.txtSobreNos:nth-of-type(1){
+    margin-top: 40px;
+}
+
+/* produto */
+#slTipo{
+    width: 270px;
+    height: 36px;
+    margin-right: 20px;
+}
+
+
+#txtBusca{
+    border: 1px solid #333;
+    padding:8px 6px;
+    width: 270px;
+}
+
+#btnBusca{
+     margin-left: 35px;
+}
+
+.imgProdutoExib{
+    width: 350px;
+    height: 200px;
+    border: 1px solid #212121;
+    float: right;
+}
+
+.dvExib{
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-bottom: 85px;
+    }
+
+.dvExibSpan{
+    margin-top: 45px;
+    padding: 10px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 0.02em;
+}
+
+.linkDetalhesProd{
+    font-family: 'Kaushan Script', cursive;
+    color: #212121;
+}
+
+.linkDetalhesProd:hover{
+    color: #1976D2;
+}
+
+/* Detalhesprod */
+#dvDetalhesProd{
+    text-align: center;
+}
+
+
+#imgDetalhesProd{
+    width: 500px;
+    height: 280px;
+    border: 3px solid #212121;
+    margin-bottom: 9px;
+    
+}
+
+#spNomeDetalhesProd{
+
+    font-size: 1.6em;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: uppercase;
+    display: block;
+}
+
+#spPrecoDetalhesProd{
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 36px;
+}
+
+#spDescDetalhesProd{
+    display: block;
+    font-size: 1.2em;
+    
+}
+
+/* simule seu pedido */
+.dvSimulacao{
+   font-size: 1.2em; 
+}
+
+#frmSimulacao .spanSimulacao{
+    display:block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 30px; 
+}
+
+input[type='radio'][name='pao']:nth-of-type(2){
+    margin-left: 20px;
+}
+
+#frmSimulacao input[type='checkbox']{
+    margin-right: 8px;
+}
+
+.spPrecoTotal{
+    display: block;
+    font-weight: bold;
+    color:  #2196F3;
+    margin-top: 30px;
+    border: 2px solid #2196F3;
+    
+}
+
+/*footer*/
+footer {
+margin: 50px 0;
+}
+
+/*slider*/
+.dvSlider{
+    width: 580px;
+    height: 350px;
+    margin: 0 auto;
+    border: 3px solid #212121;
+    animation: slider 10s infinite linear;
+    -webkit-animation: slider 10s infinite linear;
+    -moz-animation: slider 10s infinite linear;
+}
+
+
+@keyframes slider{
+    0%, 24%{
+       background-image: url(../img/slider1.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    
+    25%, 49%{
+       background-image: url(../img/slider2.jpg); 
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    
+    50%, 74%{
+       background-image: url(../img/slider3.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    
+    75%, 100%{
+       background-image: url(../img/slider4.jpg); 
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+}
+
+@-webkit-keyframes slider{
+    0%, 24%{
+       background-image: url(../img/slider1.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    
+    25%, 49%{
+       background-image: url(../img/slider2.jpg); 
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    
+    50%, 74%{
+       background-image: url(../img/slider3.jpg); 
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    
+    75%, 100%{
+       background-image: url(../img/slider4.jpg); 
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+}
+
+@-moz-keyframes slider{
+    0%, 24%{
+       background-image: url(../img/slider1.jpg); 
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    
+    25%, 49%{
+       background-image: url(../img/slider2.jpg); 
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    
+    50%, 74%{
+       background-image: url(../img/slider3.jpg); 
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    
+    75%, 100%{
+       background-image: url(../img/slider4.jpg); 
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+}
+
+/* xs */
+@media (max-width: 767px) { 
+
+    .container{width: 100%;}
+    .menu{display:none;}
+    .cabecalho{height: 120px;}
+    .cabecalho span{display:none;}
+    .cabecalho .imgLogoCelular{height: 120px; display:block; margin: -10px auto 0px auto}
+    #dvImgFixa #imgFixaHome, .imgDestHome{height: 80%;}
+    .imgProdutoExib{width: 70%; height: 100%}
+    .dvExibSpan{margin-top: 6px;}
+    #imgDetalhesProd{margin-top: 20px; height: 70%; width: 90%;}
+    #slTipo{margin-bottom: 9px;}
+    #btnBusca{margin-top: 11px; margin-left: 0; display: block;}
+    .btnPainel{position: absolute; left: 72%; top: 1%;}
+    .spGrande{font-size: 1.2em; font-weight: bold; letter-spacing: 0.06em;}
+    .spSub{font-size: 1em; }
+    .dvSlider{display: none;}
+    #imgFixaHome{width: 100%;}
+   
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 979px) { 
+    .container{width: 95%;margin: 0 auto;} 
+    #spFuncionamento, #spEndereco{display:none;}
+    #slTipo{margin-bottom: 9px;}
+    #btnBusca{margin-top: 11px; margin-left: 0; display: block;}
+    .imgDestHome{width: 75%; margin-top: 7px;}
+}
+
+@media (min-width: 980px) and (max-width: 991px) { 
+    .cabecalho span{display:none;}
+    #slTipo{margin-bottom: 9px;}
+    #btnBusca{margin-top: 11px; margin-left: 0; display: block;}
+}
+
+/* md + */
+@media (min-width: 992px) {
+    .container{
+        width: 960px;
+        margin: 0 auto;
+    }
+}  
