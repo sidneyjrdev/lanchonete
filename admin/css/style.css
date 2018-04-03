@@ -394,7 +394,7 @@ a:hover{
 @media (min-width: 992px) {
 
     .container{
-        width: 960px;
+        width: 70%;
         margin: 0 auto;
     }
 
