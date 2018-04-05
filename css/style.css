@@ -609,4 +609,8 @@ margin: 50px 0;
         width: 70%;
         margin: 0 auto;
     }
-}  
+}
+
+@media (min-width: 1368px) {
+    #imgFixaHome{width: 60%; height: 40%;}
+}
